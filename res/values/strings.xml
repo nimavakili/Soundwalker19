@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"><b>Other Order</b></string>
+    <string name="image_slider">INDEX</string>
+    <!-- string name="hello_world">Hello World!</string -->
+    <string name="menu_debug">Debug</string>
+    <string name="menu_about">About</string>
+    <string name="menu_reset">Reset</string>
+    <string name="menu_delete">Supprimer les données sauvegardées</string>
+    <string name="menu_help">Aide</string>
+    <string name="stop_recording">Arrêter l\'enregistrement</string>
+    <string name="start_recording">Planter une graine</string>
+    <string name="start_tracking"><b>Start\nSound Walk</b></string>
+    <string name="stop_tracking"><b>Stop\nSound Walk</b></string>
+    <string name="start_intro">Play Intro</string>
+    <string name="stop_intro">Stop Intro</string>
+    <string name="upload_button">Upload Files</string>
+    <string name="go_button">Go!</string>
+    <string name="save_button">Envoyer</string>
+    <string name="back_button">Back</string>
+    <string name="play_button">Écouter</string>
+    <string name="stop_button">Arrêter</string>
+    <string name="go_text"><b>How treelike we are,\nHow human the tree</b>\n\nGretel Ehrlich, \"River History\", 1998</string>
+    <string name="version">v3.0b</string>
+    <string name="outide_map">You must be in Bussey Brook\nMeadow to use this app.</string>
+    <string name="went_outide">You exited Bussey Brook Meadow while GPS tracking was on. GPS tracking might drain your battery. Do you wish to stop GPS tracking?</string>
+    <string name="came_inside">You are at Bussey Brook Meadow now. Do you wish to start the sound walk?</string>
+    <string name="searching">Acquiring GPS Lock...</string>
+    <string name="gps_disabled">GPS Receiver Disabled</string>
+    <!-- string name="test">http://minim-v.com/grimpant/A000002A64C317/40.50689578,-74.47057746,20130615163348.mp3</string -->
+    <!-- string name="nomap_text">No Map Available  No Map Available  No Map Available\n\nNo Map Available  No Map Available  No Map Available\n\nNo Map Available  No Map Available  No Map Available\n\nNo Map Available  No Map Available  No Map Available\n\nNo Map Available  No Map Available  No Map Available\n\nNo Map Available  No Map Available  No Map Available\n\nNo Map Available  No Map Available  No Map Available\n\nNo Map Available  No Map Available  No Map Available</string -->
+    
+    <string name="gps_disabled_prompt_kitkat">Your GPS receiver is disabled! Please set the location mode on \"High accuracy\" or \"Device only\".</string>
+    <string name="gps_disabled_prompt">Your GPS receiver is disabled! Would you like to enable it?</string>
+    <string name="enable_gps"><b>Enable GPS</b></string>
+    <string name="do_nothing">Dismiss</string>
+    <string name="unsent_both">Grimpant a %1$d parcours et %2$d enregistrement(s) qui n\'ont pas été envoyés. Envoyer maintenant ?</string>
+    <string name="unsent_track">Grimpant n\'a pas pu envoyer %1$d parcours. Envoyer maintenant ?</string>
+    <string name="unsent_audio">Grimpant n\'a pas pu envoyer %1$d enregistrement(s). Envoyer maintenant ?</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+	<string name="upload_recording">Voulez-vous sauvegarder/envoyer cet enregistrement ?</string>
+	<string name="upload_track">Voulez-vous sauvegarder/envoyer ce parcours ?</string>
+	<string name="need_lock"> L\'enregistrement nécessite un signal GPS stable.</string>
+	<string name="wait_lock">S\'il vous plaît, patientez jusqu\'à ce que Grimpant obtienne un signal GPS stable.</string>
+    <string name="unsent_notif">Grimpant a des parcours/enregistrements qui n\'ont pas été envoyés.</string>
+    <string name="delete_notif">Êtes-vous sûr de vouloir supprimer tous les fichiers sauvegardés ?</string>
+    <string name="detail_notif">Sélectionnez pour consulter les détails.</string>
+    <string name="upload_notif">Grimpant téléchargement</string>
+    <string name="uploading">Envoi</string>
+    <string name="track">du parcours</string>
+    <string name="audio">de l\'enregistrement audio</string>
+    <string name="uploading_finished">terminé</string>
+    <string name="uploading_error">Erreur lors de l\'envoi</string>
+    <string name="uploading_unsent">des parcours/enregistrement(s)</string>
+    <string name="is_tracking">Other Order is tracking</string>
+    <string name="no_lock">No GPS Lock</string>
+    <string name="lock">GPS Lock</string>
+	<string name="no_internet">Pas d\'accès internet !</string>
+	<string name="no_sd">No SD card!</string>    	
+	<string name="no_folder">Could not find the Soundwalker folder on the SD card!</string>    	
+	<string name="no_mp3">Could not find any MP3 files in the Soundwalker folder!</string>    	
+	<string name="invalid_format">\nCorrect: latitude,longitude,radius1,radius2.mp3\n\n\t\tlatitude and longitude in degrees\n\t\tradius1: active radius in meters\n\t\tradius2: fade-in radius in meters\n\nExample: 42.90895,-78.87955,48,24.mp3</string>    	
+		
+    
+    <string name="about"><b>Other Order (2014)\nTeri Rueb and Peter Del Tredici</b>\n\n“Other Order” is a sound walk set in the Bussey Brook Meadow of the Arnold Arboretum. Where the formal gardens of the Arboretum present visitors with carefully arranged and maintained specimens organized according to scientific systems of botanical classification, Bussey Brook Meadow is a less easily categorized “emergent” ecology – an urban wild that has evolved through informal processes of management that have left it open to colonization by spontaneous vegetation and the ever-shifting impacts of human interventions. While both landscapes are the product of human design and intervention, Bussey Brook Meadow emerges as a sort of alter ego to the Arboretum proper – an&#160;Arboretum&#160;gone&#160;wild.\n\nThe sound walk presents a blend of recorded conversations and sounds drawn from and inspired by the landscape itself. As visitors walk with mobile app in hand, their position is sensed by GPS and triggers playback of sounds at particular locations. The voice of the Arnold Arboretum’s beloved Senior Research Scientist, Peter Del Tredici, and guests who visit the meadow with him illuminate the biological, social and cultural significance of the meadow as an urban wild.\n\nVisitors are encouraged to download the app in advance of their visit and wear headphones for optimal listening. Be mindful of bicyclists and other pedestrians on the trail who you may not hear approaching when wearing headphones.\n\nFurther Information:\n\twww.terirueb.net/other_order\n\nCredits:\n\t\tCreated by Teri Rueb and Peter Del Tredici\nAdditional Sound Recording:\n\t\tErnst Karel\nAdditional Sound Design:\n\t\tAdam McFillin\nMobile App Software:\n\t\tNima Vakili (Android)\n\t\tTom Stoll, Kitefish Labs (iOS)\nIllustration:\n\t\tAlison Paul\nFlute:\n\t\tAndrea Douglass\nSpecial Thanks:\n\t\tMaggie Redfern\n\t\tAnya Yermakova\n\nOther Order was commissioned by the Arnold Arboretum / Harvard University and generously funded with an Artist Residency at the Harvard metaLab.</string>
+    <string name="index">For more information and detailed plant identification see:\n\t\t<b>Wild Urban Plants of the Northeast: A Field Guide</b>\n\t\tBy Peter Del Tredici\n\t\tCornell University Press, 2010</string>
+    
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    <string-array name="plants">
+		<item>Amur Cork Tree 1</item>
+		<item>Amur Cork Tree 2</item>
+		<item>Ash</item>
+		<item>Black Cherry 1</item>
+		<item>Black Cherry 2</item>
+		<item>Black Walnut</item>
+		<item>Carolina Silver Bell 1</item>
+		<item>Carolina Silver Bell 2</item>
+		<item>Castor Aralia</item>
+		<item>Chicory</item>
+		<item>Common Reed</item>
+		<item>Hackberry</item>
+		<item>Japanese Knotweed</item>
+		<item>Milkweed</item>
+		<item>Mugwort</item>
+		<item>Oak Hickory Woods</item>
+		<item>Oriental Bittersweet 1</item>
+		<item>Oriental Bittersweet 2</item>
+		<item>Oriental Bittersweet 3</item>
+		<item>Princess Tree</item>
+		<item>Red Maple</item>
+		<item>Reed Canary Grass</item>
+		<item>Staghorn Sumac</item>
+		<item>Sumac</item>
+		<item>Swamp Dewberry</item>
+		<item>Thimble Berry</item>
+		<item>Tree of Heaven</item>
+		<item>Wild Grape</item>
+		<item>Yellow Flag Iris</item>
+    </string-array>
+    <string-array name="plantsLatin">
+		<item>PHELLODENDRON_AMURENSE</item>
+		<item>PHELLODENDRON_AMURENSE</item>
+		<item>FRAXINUS_CHINENSIS</item>
+		<item>PRUNUS_SEROTINA</item>
+		<item>PRUNUS_SEROTINA</item>
+		<item>JUGLANS_ NIGRA</item>
+		<item>HALESIA</item>
+		<item>HALESIA</item>
+		<item>KALOPANAX_PICTUS</item>
+		<item>CHICORIA_INTYBUS</item>
+		<item>PHRAGMITES_AUSTRALIS</item>
+		<item>CELTIS_OCCIDENTALIS</item>
+		<item>POLYGONUM_CUSPIDATUM</item>
+		<item>ASCELPIA_SYRIACUS</item>
+		<item>ARTEMESIA_VULGARIS</item>
+		<item>QUERCUS_SPECIES_CARYA_SPECIES</item>
+		<item>CELASTRUS_ORBICULATUS</item>
+		<item>CELASTRUS_ORBICULATUS</item>
+		<item>CELASTRUS_ORBICULATUS</item>
+		<item>PAULOWNIA_TOMENTOSA</item>
+		<item>ACER_RUBRUM</item>
+		<item>PHALARIS_ARUNDINACEA</item>
+		<item>RHUS_TYPHINA</item>
+		<item>RHUS</item>
+		<item>RUBUS_HISPIDUS</item>
+		<item>RUBUS_FLAGELLARIS</item>
+		<item>AILANTHUS_ALTISSIMA</item>
+		<item>VITIS_RIPARIA</item>
+		<item>IRIS_PSEUDOACORUS</item>
+    </string-array>
+    <string-array name="landmarks">
+		<item>Adaptive Growth</item>
+		<item>Blackwell Footpath Stone</item>
+		<item>Cow Tunnel</item>
+		<item>Puritan Ice Cream</item>
+		<item>Trash Rack</item>
+		<item>Water Barrel</item>
+    </string-array>
+</resources>

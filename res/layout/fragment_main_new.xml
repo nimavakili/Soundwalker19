@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription" >
+
+    <RelativeLayout
+        android:id="@+id/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ring_orange" />
+
+		<TextView
+		    android:id="@+id/center_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:text="@string/app_name"
+		    android:visibility="gone"
+		    android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:clickable="false"
+            android:src="@drawable/btn_c_shadow" />
+		
+		<ImageView
+		    android:id="@+id/trackingBtn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:clickable="false"
+            android:src="@drawable/btn_toggle_c" />
+		
+	    <ToggleButton
+	        android:id="@+id/trackingButton"
+	        android:layout_width="128dp"
+	        android:layout_height="128dp"
+	        android:layout_centerInParent="true"
+	        android:background="#00000000"
+	        android:onClick="onTrackingToggled"
+	        android:text="@string/start_tracking"
+	        android:textOff="@string/start_tracking"
+	        android:textOn="@string/stop_tracking"
+	        android:textSize="@dimen/btn_size_large" />
+	    			
+    </RelativeLayout>
+		
+    <!--TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/app_name"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_size" /-->
+
+    <!--RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" >
+
+    <ToggleButton
+        android:id="@+id/introButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_toggle"
+        android:gravity="center_vertical|center_horizontal"
+        android:minHeight="56dp"
+        android:minWidth="128dp"
+        android:onClick="onIntroToggled"
+        android:text="@string/start_intro"
+        android:textOff="@string/start_intro"
+        android:textOn="@string/stop_intro"
+        android:textSize="@dimen/btn_size" >
+
+    </RelativeLayout/-->
+    	
+	<!-- RelativeLayout
+	    android:id="@+id/helpFrame"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white"
+	    android:visibility="invisible" >
+	    
+	    <ScrollView
+	        android:id="@+id/SCROLLER_ID2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginBottom="84dp"
+	        android:layout_marginTop="60dp"
+	        android:fillViewport="true"
+	        android:paddingLeft="30dp"
+	        android:paddingRight="30dp"
+	        android:scrollbarAlwaysDrawVerticalTrack="true"
+			android:fadeScrollbars="false"
+	        android:scrollbarStyle="outsideOverlay"
+	        android:scrollbars="vertical" >
+	        
+	        <TextView
+	            android:id="@+id/help"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/help"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textSize="@dimen/label_size" />
+	
+		</ScrollView>
+        
+	    <TextView
+	        android:id="@+id/helpTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/menu_help"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="@dimen/title_size" />
+
+	</RelativeLayout-->
+
+    <RelativeLayout
+        android:id="@+id/stats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/main_bg"
+        android:layout_alignTop="@id/main_bg"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+		
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:orientation="horizontal" >
+
+		    <LinearLayout
+		        android:layout_height="wrap_content"
+		        android:layout_width="0dp"
+		        android:layout_weight=".5"
+		        android:orientation="vertical" >
+			    <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:padding="10dp"
+			        android:text="Latitude"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:padding="10dp"
+			        android:text="Longitude"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:padding="10dp"
+			        android:text="Accuracy"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:padding="10dp"
+			        android:text="All Regions"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:padding="10dp"
+			        android:text="Active Regions"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    
+			</LinearLayout>
+
+		<View
+		    android:layout_width="2dp"
+		    android:layout_height="match_parent"
+		    android:background="@color/holo_blue_bright" />
+		
+		    <LinearLayout
+		        android:layout_height="wrap_content"
+		        android:layout_width="0dp"
+		        android:layout_weight=".5"
+		        android:orientation="vertical" >
+			    <TextView
+			        android:id="@+id/latitude"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="10dp"
+			        android:text="---"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    <TextView
+			        android:id="@+id/longitude"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="10dp"
+			        android:text="---"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    <TextView
+			        android:id="@+id/accuracy"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="10dp"
+			        android:text="---"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    <TextView
+			        android:id="@+id/all"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="10dp"
+			        android:text="---"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			    <TextView
+			        android:id="@+id/active"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="10dp"
+			        android:text="---"
+			        android:textAppearance="@android:style/TextAppearance.Medium"
+			        android:textSize="@dimen/label_size" />
+			</LinearLayout>
+	</LinearLayout>
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_bg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" >
+
+        <ToggleButton
+	        android:id="@+id/introButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/btn_toggle"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:minHeight="56dp"
+	        android:minWidth="128dp"
+	        android:onClick="onIntroToggled"
+	        android:text="@string/start_intro"
+	        android:textOff="@string/start_intro"
+	        android:textOn="@string/stop_intro"
+	        android:checked="true"
+	        android:textSize="@dimen/btn_size" />
+        
+		<TextView
+		    android:id="@+id/searching"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:background="@android:drawable/toast_frame"
+		    android:gravity="center"
+		    android:shadowColor="#BB000000"
+		    android:shadowRadius="2.75"
+		    android:text="@string/searching"
+		    android:visibility="invisible"
+		    android:textAppearance="@android:style/TextAppearance.Small"
+		    android:textColor="@color/white" />
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" >
+
+		<ImageView
+		    android:id="@+id/menu"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:clickable="true"
+		    android:onClick="onMenu"
+		    android:src="@android:drawable/ic_menu_manage" />
+	</RelativeLayout>
+	
+	<ImageView
+		android:layout_width="207dp"
+	    android:layout_height="304dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="-25dp"
+	    android:layout_marginLeft="-60dp"
+	    android:adjustViewBounds="true"
+	    android:scaleType="fitCenter"
+	    android:src="@drawable/leaf_1" />
+    
+    <ImageView
+        android:layout_width="196dp"
+        android:layout_height="322dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginRight="-80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/leaf_2" />
+
+</RelativeLayout>
